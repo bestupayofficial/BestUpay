@@ -609,9 +609,9 @@
           </div>
         </div>
 
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form id="contact-form" class="bg-light p-4 p-md-5 contact-form" method="post">
+        <div class="row no-gutters block-9" >
+          <div class="col-md-6 order-md-last d-flex"  id="form-container">
+            <form id="contact-form" class="bg-light text-white p-4 p-md-5 contact-form" method="post">
               <div class="form-group">
                 <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" required>
               </div>
@@ -628,11 +628,13 @@
                 <input type="submit" value="Send Message" onclick="sendEmail() ; reset() ; return false;" class="btn btn-primary py-3 px-5">
               </div>
             </form>
-          
+			<div id="successMessage" class="bg-dark p-5 p-md-5" style="display:none; width:150vh">
+				<p>Thank you for your message! We'll get in touch with you soon.</p>
+			  </div>
           </div>
-
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/contact.png); background-size: contain;"></div>
+	
+          <div class="col-md-6 d-flex" >
+          	<div id="contactImage" class="img" style="background-image: url(images/contact.png); background-size: contain;"></div>
           </div>
         </div>
       </div>
