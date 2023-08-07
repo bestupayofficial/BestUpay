@@ -685,8 +685,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Noida UttarPradesh</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">7518283125</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">bestupayofficial@gmail.com</span></a></li>
+	                <li><a href="tel:+917518283125"><span class="icon icon-phone"></span><span class="text">7518283125</span></a></li>
+	                <li><a href="mailto:bestupayofficial@gmail.com"><span class="icon icon-envelope"></span><span class="text">bestupayofficial@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -696,7 +696,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | All the sign and symbol owned by respective Owners</a>
+  Copyright &copy;<span id="date"></span> All rights reserved | All the sign and symbol owned by respective Owners</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -725,5 +725,10 @@
   <script src="js/main.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script src="js/form.js"></script>
+	  <script>
+	let year = new Date().getFullYear();
+	document.getElementById("date").innerHTML = year;
+
+	</script>
   </body>
 </html>
