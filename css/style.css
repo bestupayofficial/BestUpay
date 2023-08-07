@@ -39,7 +39,21 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
+#CompleteProjects, #Hours, #Customers {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 1s;
+}
+#CompleteProjects:hover{
+  scale: 1.1;
+}
+#Hours:hover{
+scale: 1.1;
+}
+#Customers:hover{
+  scale: 1.1;
+  }
 html {
   font-family: sans-serif;
   line-height: 1.15;
