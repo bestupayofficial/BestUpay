@@ -764,7 +764,18 @@ jQuery.event.special.mousewheel = {
 	  <script>
 	let year = new Date().getFullYear();
 	document.getElementById("date").innerHTML = year;
-		 
+		 // Get a reference to the document's head element
+    var head = document.getElementsByTagName('head')[0];
+
+    // Create a new <meta> element for Cache-Control header
+    var cacheControlMeta = document.createElement('meta');
+
+    // Set the attributes for the Cache-Control header
+    cacheControlMeta.setAttribute('http-equiv', 'Cache-Control');
+    cacheControlMeta.setAttribute('content', 'max-age=31536000'); // Example: Cache content for 1 hour
+
+    // Append the <meta> element to the <head> element
+    head.appendChild(cacheControlMeta);
 	</script>
 	  
   </body>
