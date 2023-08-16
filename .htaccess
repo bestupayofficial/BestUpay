@@ -15,7 +15,7 @@
     </FilesMatch>
 
 </IfModule>
-<IfModule mod_expires.c>
+/*<IfModule mod_expires.c>
     ExpiresActive on
     ExpiresDefault                                      "access plus 1 month"
 
@@ -67,3 +67,4 @@
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
 </IfModule>
+*/
