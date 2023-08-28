@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/career.css">
+    <title>BestUPay Careers</title>
+</head>
+<body>
+    <header>
+        <nav>
+          
+            <a href="/careers">CAREERS</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="careers-section">
+            <h1>Careers at BestUPay</h1>
+            <p>We are always looking for talented individuals to join our team.</p>
+        </section>
+    </main>
+
+<main>
+    <section>
+        <div>
+            <form id="contact-form">
+
+                <label for="Name">Name: </label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" accept=".pdf,.doc,.docx" required/><br><br>
+                <input type="text" id="get" style="display:none;" /> 
+                <h1 id="hone" style="display: none;"></h1>
+                <button type="submit" onclick="sendEmail(); reset(); return false;">Submit Application</button>
+            </form>
+            <!-- <button id="show-resume">Show Resume</button> -->
+
+        </div>
+        <div id="successMessage" class="bg-dark p-5 p-md-5" style="display:none; width:150vh">
+            <p>Thank you for your message! We'll get in touch with you soon.</p>
+          </div>
+    </section>
+</main>
+    <div class="thanks" style="display:none">
+    THANK YOU FOR APPLYING!
+    </div>
+
+    <footer>
+        <p>&copy; 2023 BestUPay. All rights reserved.</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="js/career.js"></script>
+</body>
+</html>
