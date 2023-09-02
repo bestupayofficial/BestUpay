@@ -1,0 +1,83 @@
+/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: black;
+    color: #ffbd39;
+    text-align: center;
+    /* padding: 1rem; */
+}
+
+nav a {
+    color: #ffbd39;
+    text-decoration: none;
+    /* margin: 0 10px; */
+    font-size: 35px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+main {
+    /* padding: 2rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section {
+    width: 50%;
+}
+.careers-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    
+}
+#successMessage{
+    display: none;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #ffbd39;
+    color: whit;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+footer{
+    margin-top: 2rem;
+    text-align: center;
+}
+button:hover {
+    background-color: #555;
+}
