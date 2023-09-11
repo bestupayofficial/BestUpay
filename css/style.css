@@ -337,12 +337,13 @@ h6, .h6 {
             background-color:#ffbd39;
             color: black;
             border: none;
-            cursor: pointer;
-            transition: all ease 1s;
+  object-fit: cover;
+  transition: all ease 1s !important;
 }
 #Contactus:hover {
-       background-color: #ffbd39;
-      transform: scale(1.1);
+    cursor: pointer !important;
+
+      transform: scale(1.1) !important;
 }
 
 #Hours:hover{
